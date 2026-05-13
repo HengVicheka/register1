@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+  
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: rgb(158, 204, 242);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+hr{
+    color: black;
+    border: 1px solid;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.file-input {
+    width: 100%;
+    border: 1px solid #232222;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.options label {
+    font-weight: normal;
+    margin-bottom: 3px;
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-reset {
+    background-color: #6c757d;
+    color: white;
+    margin-left: 10px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+</style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Student Registration</h2>
+        <hr>
+        <form>
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" placeholder="Enter username">
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" placeholder="Enter password">
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="options">
+                    <label><input type="radio" name="gender"> Male</label>
+                    <label><input type="radio" name="gender"> Female</label>
+                    <label><input type="radio" name="gender"> Other</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Hobbies</label>
+                <div class="options">
+                    <label><input type="checkbox"> Reading</label>
+                    <label><input type="checkbox"> Music</label>
+                    <label><input type="checkbox"> Sports</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Upload File</label>
+                <input type="file" class="file-input">
+            </div>
+
+            <div class="form-group">
+                <label>Country</label>
+                <select>
+                    <option>Select your country</option>
+                    <option>Cambodia</option>
+                    <option>USA</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea placeholder="Write your message..."></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn-submit">Submit</button>
+                <button type="reset" class="btn-reset">Reset</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
